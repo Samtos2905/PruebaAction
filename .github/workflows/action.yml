@@ -3,7 +3,7 @@ name: workflow-action
 on:
   push:
     branches:
-      -oliver
+      - oliver
 
 jobs:
   trabajo1:
