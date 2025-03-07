@@ -1,17 +1,17 @@
-name: Checkout
+name: workflow-action
 
 on:
   push:
     branches:
+      -oliver
 
 jobs:
   trabajo1:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      #- name: Checkout
+      #  uses: actions/checkout@v2
 
       - name: listar archivos
         run: ls -la
-        
