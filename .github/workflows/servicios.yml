@@ -1,0 +1,27 @@
+name: workflow-action-services
+
+on:
+  push:
+    branches:
+      - oliver
+
+jobs:
+  trabajo1:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports:
+          - 3306:3306
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: listar archivos
+        run: ls -la
+
+      
+        
