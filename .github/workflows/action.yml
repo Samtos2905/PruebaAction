@@ -1,0 +1,17 @@
+name: Checkout
+
+on:
+  push:
+    branches:
+
+jobs:
+  trabajo1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: listar archivos
+        run: ls -la
+        
